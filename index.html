@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <main>
+        <div class="icons">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </main>
+
+
+    <div id="title-desription-image">
+        <h1 id="recipe-title">Vietnamese chicken noodle soup</h1>
+        <hr>
+        <h3>Some description IDK what to say and cba to copy</h3>
+        <img src="./img/chicken-pho-5fb5771.webp" class="recipe-image">
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm text-left">
+            NAME SURNAME
+          </div>
+          <div class="col-sm">
+            TOTAL
+          </div>
+        </div>
+    </div>
+    
+    <table id="myTable">
+        <header>
+          <tr>
+            <td>Ingredient</td>
+          </tr>
+        </header>
+        <footer>
+        </footer>
+      </table>
+      <button type="button" onclick="New_Item()">Add Ingredient</button>
+
+
+      <script>
+        const chickenNoodleSoupIngridients = [
+        
+    ];
+
+    // Change the title
+    const recipeTitle = ["Chicken Noodle Soup"]
+    document.getElementById("recipe-title").innerHTML = recipeTitle
+    
+    var current=0;
+    const IngredientsChickenNoodles = ["900ml chicken or vegetable stock",
+        "1 boneless, skinless chicken breast",
+        "1 tsp chopped fresh ginger",
+        "50g rice or wheat noodles"];
+    function New_Item() {
+    if (current < IngredientsChickenNoodles.length) {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(current+1);
+    var cell1 = row.insertCell(0);
+    cell1.innerHTML = IngredientsChickenNoodles[current];
+        current++;
+    }
+    }
+
+    /* Second version with loop */
+
+    window.onload = function(e) {
+    IngredientsChickenNoodles.forEach(function(item, index, array) {
+        New_Item_with_loop(index);
+    });
+    }
+    function New_Item_with_loop(index) {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(index+1);
+    var cell1 = row.insertCell(0);
+    cell1.innerHTML = IngredientsChickenNoodles[index];
+    }
+
+      </script>
+</body>
+</html>
