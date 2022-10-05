@@ -82,6 +82,7 @@
         </table>
         <button type="button" onclick="New_Item()">Add Ingredient</button>
         </div>
+        <button type="button" onclick="getURL();">Get Page URL</button>
     </main>
 
       <script>
@@ -120,6 +121,10 @@
     var row = table.insertRow(index+1);
     var cell1 = row.insertCell(0);
     cell1.innerHTML = IngredientsChickenNoodles[index];
+    }
+
+    function getURL() {
+        alert(window.location.href);
     }
 
       </script>
