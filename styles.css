@@ -1,5 +1,9 @@
 .img-logo {
-  width: 20%;
+  width: 15%;
   margin: 30px auto;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+}
+
+.nav-select {
+  padding-bottom: 30px;
 }
