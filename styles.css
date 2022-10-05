@@ -7,3 +7,9 @@
 .nav-select {
   padding-bottom: 30px;
 }
+
+.receipt-content > p {
+  font-size: 22px;
+  line-height: 30px;
+  color: rgb(101, 105, 124);
+}
