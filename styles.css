@@ -1,15 +1,15 @@
 .img-logo {
   width: 15%;
-  margin: 30px auto;
-  padding-bottom: 18px;
+  margin: 2rem auto;
+  padding-bottom: 1.5rem;
 }
 
 .nav-select {
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
 }
 
 .receipt-content > p {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 1.45rem;
+  line-height: 2rem;
   color: rgb(101, 105, 124);
 }
