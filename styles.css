@@ -18,15 +18,44 @@
   margin-top: 1.5rem;
 }
 
-/* hover animation */
-.img-food:hover {
-  opacity: 0.3;
-
-  color: rgb(114, 107, 107);
-
-  background: rgba(0, 0, 0, 0.8);
-}
-
 .receipts-content-section {
   margin-bottom: 2rem;
+}
+
+/* hover animation */
+
+.img-food {
+  position: relative;
+  width: 52rem;
+  height: 35rem;
+}
+
+.img-food a,
+.img-food span {
+  display: none;
+  text-decoration: none;
+}
+.img-food:hover {
+  cursor: pointer;
+}
+.img-food:hover a.now {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  left: 0;
+  display: block;
+}
+.img-food:hover span {
+  display: block;
+  position: absolute;
+  top: 15rem;
+
+  color: rgb(0, 0, 0);
+  width: 52.5rem;
+
+  font-size: 2.5rem;
+  background: rgba(255, 255, 255, 0.774);
 }
