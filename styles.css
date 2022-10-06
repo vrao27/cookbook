@@ -17,3 +17,12 @@
 .table {
   margin-top: 1.5rem;
 }
+
+/* hover animation */
+.img-food:hover {
+  opacity: 0.3;
+
+  color: rgb(114, 107, 107);
+
+  background: rgba(0, 0, 0, 0.8);
+}
