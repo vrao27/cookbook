@@ -8,6 +8,7 @@
   padding-bottom: 2rem;
 }
 
+ /* description of pancakes before image */
 p {
   font-size: 1.45rem;
   line-height: 2rem;
@@ -54,7 +55,7 @@ p {
   transform: scale(0.8);
 }
 
-
+/* overlay text styling*/
 .text {
   color: white;
   font-size: 30px;
