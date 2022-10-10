@@ -111,3 +111,7 @@ body {
 #recipe-description {
   font-weight: 400;
 }
+
+#tagline {
+  font-weight: lighter;
+}

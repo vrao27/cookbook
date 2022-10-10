@@ -24,7 +24,7 @@
 
     <h1 id="recipe-title">TITLE</h1>
     <hr>
-    <h3 id="recipe-description">DESCRIPTION</h3>
+    <h4 id="recipe-description">DESCRIPTION</h4>
     <div class="container">
         <img src="img/easy_chicken_noodle_soup_73271_16x9.jpg" class="image" alt="" id="image" />
         <div class="overlay">
@@ -34,12 +34,12 @@
 
     <div style="display: flex; justify-content: space-between;">
         <div class="d-flex flex-column">
-            <h4 id="name">NAME</h4>
-            <h5 id="tagline">SOMET</h5>
+            <h3 id="name">NAME</h3>
+            <h4 id="tagline">SOMET</h4>
         </div>
         <div class="d-flex flex-column">
-            <h4>Total</h4>
-            <h5 id="time-method">0 Mins</h5>
+            <h3>Total</h3>
+            <h4 id="time-method">0 Mins</h4>
         </div>
     </div>  
 
@@ -52,13 +52,13 @@
         </table>
     </div>
 
-    <h3>Method</h3>
+    <h3 style="padding-top: 5%;">Method</h3>
     <ul id="method-list">
     </ul>
 
     <img src="./img/share.png" alt="" style="display: flex;
     justify-content: space-between;
-    max-width: 2%;" onclick="getURL();"/>
+    max-width: 5%;" onclick="getURL();"/>
     <script>
 
     const recipe_title = ["Vietnamese Chicken Pho"]
@@ -70,7 +70,7 @@
     const name = ["Wiktor Szymczyk"]
     document.getElementById("name").innerHTML = name
 
-    const tagline = ["This is some text about who knows what"]
+    const tagline = ["I know how to cook so yeah there you go!"]
     document.getElementById("tagline").innerHTML = tagline
 
     const time = ["5 Mins"]
